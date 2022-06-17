@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+  mongo:
+    build: .
+    image: mongo
+    volumes:
+      - ./mongodb:/data/db
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "superuser"
+      MONGO_INITDB_ROOT_PASSWORD: "changeMeToAStrongPassword"
+  node:
+    image: node
+    user: node
+    working_dir: /home/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/app
+    ports:
+      - 5000:5000
+    command: "node app.js"
+
+
+
+# zum verbinden auf die db: 
+# mongosh -u superuser -p changeMeToAStrongPassword --authenticationDatabase admin 
+# oder:
+# mongo -u superuser -p changeMeToAStrongPassword --authenticationDatabase admin 
