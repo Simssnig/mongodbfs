@@ -21,25 +21,25 @@ RaspAP installieren (https://raspap.com/)
 	```curl -sL https://install.raspap.com | bash```
 
 Docker installieren (https://www.docker.com/):
-	```curl -fsSL https://get.docker.com -o get-docker.sh
+	```curl -fsSL https://get.docker.com -o get-docker.sh``` & ```
 	sudo sh get-docker.sh```
 
 IP-Tables hinzufügen:
 	```sudo iptables -I DOCKER-USER -i src_if -o dst_if -j ACCEPT```
    
 Den aktuellen Benutzer in die Gruppe Docker hinzufügen.
-  ```sudo usermod -aG docker [aktuellen Benutzer]
+  ```sudo usermod -aG docker [aktuellen Benutzer]``` &```
   exit```
 
 Docker-Compose installieren:
-	sudo apt-get install libffi-dev libssl-dev
-	sudo apt install python3-dev
-	sudo apt-get install -y python3 python3-pip
-	sudo pip3 install docker-compose
+	```sudo apt-get install libffi-dev libssl-dev & ```
+	```sudo apt install python3-dev``` & ```
+	```sudo apt-get install -y python3 python3-pip``` &  ```
+	```sudo pip3 install docker-compose```
 
 Um den Container zu starten:
-	cd && cd mongodbfs/
-	docker-compose up [-d (Daemon - Docker läuft im Hintergrund] 
+	```cd && cd mongodbfs/``` & ```
+	docker-compose up [-d (Daemon - Docker läuft im Hintergrund] ```
 		// nur beim erstmaligen starten:
       (warten bis die Meldung Server Startet on Port 5000 kommt) danach Control+C 
-	      & nochmals docker-compose up
+	      & nochmals ```docker-compose up```
