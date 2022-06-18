@@ -32,10 +32,10 @@ Den aktuellen Benutzer in die Gruppe Docker hinzufügen.
   exit```
 
 Docker-Compose installieren:
-	```sudo apt-get install libffi-dev libssl-dev & ```
-	```sudo apt install python3-dev``` & ```
-	```sudo apt-get install -y python3 python3-pip``` &  ```
-	```sudo pip3 install docker-compose```
+	```sudo apt-get install libffi-dev libssl-dev ```& ```
+	sudo apt install python3-dev``` & ```
+	sudo apt-get install -y python3 python3-pip``` &  ```
+	sudo pip3 install docker-compose```
 
 Um den Container zu starten:
 	```cd && cd mongodbfs/``` & ```
