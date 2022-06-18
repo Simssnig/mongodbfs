@@ -3,11 +3,10 @@ Schulprojekt MongoDB (Datenbank in Betrieb nehmen - M141)
 
 
 Wie installieren:
-```
-cd && git clone https://github.com/Simssnig/mongodbfs.git
-```
+  ```cd && git clone https://github.com/Simssnig/mongodbfs.git```
+  
 sicherstellen das Docker installiert ist, danach: 
-  ```docker-compose up [-d (Daemon - Docker läuft im Hintergrund] ```
+  ```docker-compose up [-d (Daemon - Docker läuft im Hintergrund)] ```
 
 Beim ersten mal ohne den Daemon laufen lassen und sicherstellen das vom node Container die Nachricht: *Server startet on Port 5000." kommt.
 Danach mit Control+C beenden.
@@ -19,18 +18,18 @@ Alternative installation RasparryPi:
   ```git clone https://github.com/Simssnig/mongodbfs.git```
 
 RaspAP installieren (https://raspap.com/)
-	curl -sL https://install.raspap.com | bash
+	```curl -sL https://install.raspap.com | bash```
 
 Docker installieren (https://www.docker.com/):
-	curl -fsSL https://get.docker.com -o get-docker.sh
-	sudo sh get-docker.sh
+	```curl -fsSL https://get.docker.com -o get-docker.sh
+	sudo sh get-docker.sh```
 
 IP-Tables hinzufügen:
-	sudo iptables -I DOCKER-USER -i src_if -o dst_if -j ACCEPT
+	```sudo iptables -I DOCKER-USER -i src_if -o dst_if -j ACCEPT```
    
 Den aktuellen Benutzer in die Gruppe Docker hinzufügen.
-  sudo usermod -aG docker [aktuellen Benutzer]
-  exit
+  ```sudo usermod -aG docker [aktuellen Benutzer]
+  exit```
 
 Docker-Compose installieren:
 	sudo apt-get install libffi-dev libssl-dev
