@@ -59,5 +59,7 @@ cd && cd mongodbfs/
 docker-compose up [-d (Daemon - Docker läuft im Hintergrund]
 ```
 ### nur beim erstmaligen starten:
-      (warten bis die Meldung Server Startet on Port 5000 kommt) danach Control+C 
-	      & nochmals ```docker-compose up```
+(warten bis die Meldung Server Startet on Port 5000 kommt) danach Control+C & nochmals:
+```
+docker-compose up
+```
