@@ -18,7 +18,7 @@ Danach mit Control+C beenden.
 Beim erneuten starten sollte neben der Nachricht: *Server startet on Port 5000." noch die Nachricht: "Gridstore: undefined" stehen. Das heisst alles läuft und man kann im Browser: "localhost:5000" eingeben.
 
 
-## Alternative installation RasparryPi:
+## Alternative installation RaspberryPi:
 ```
 git clone https://github.com/Simssnig/mongodbfs.git
 ```
