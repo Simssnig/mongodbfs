@@ -2,8 +2,8 @@
 Schulprojekt MongoDB (Datenbank in Betrieb nehmen - M141)
 
 
-Wie installieren:
-  ```cd && git clone https://github.com/Simssnig/mongodbfs.git```
+## Wie installieren:
+  - ```cd && git clone https://github.com/Simssnig/mongodbfs.git```
   
 sicherstellen das Docker installiert ist, danach: 
   ```docker-compose up [-d (Daemon - Docker läuft im Hintergrund)] ```
